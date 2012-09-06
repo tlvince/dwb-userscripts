@@ -1,0 +1,8 @@
+#!/bin/dash
+# Append the current url to Periodical's url list.
+# Copyright 2012 Tom Vincent <http://tlvince.com/contact/>
+# dwb: ep
+
+urls="${XDG_DATA_HOME:-$HOME/.local/share}/periodical/urls"
+
+echo "$DWB_URI" >> "$urls"
