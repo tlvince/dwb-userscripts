@@ -24,3 +24,28 @@ extensions.load("autoquvi", {
 //>autoquvi___CONFIG
 });
 //>autoquvi___SCRIPT
+//<requestpolicy___SCRIPT
+extensions.load("requestpolicy", {
+//<requestpolicy___CONFIG
+  // path to a whitelist 
+  whiteList : data.configDir + "/" + data.profile + "/requestpolicy.json",
+
+  // shortcut to block/allow requests
+  shortcut : "erp",
+
+  // shortcut to unblock requests from current site that are blocked on all
+  // sites
+  unblockCurrent : "erC",
+
+  // shortcut to unblock requests that are blocked on all sites
+  unblockAll : "erA",
+
+  // reload current site after blocking / unblocking a request
+  autoreload : true, 
+
+  // notify about blocked requests
+  notify : false
+
+//>requestpolicy___CONFIG
+});
+//>requestpolicy___SCRIPT
