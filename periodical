@@ -3,6 +3,9 @@
 # Copyright 2012 Tom Vincent <http://tlvince.com/contact/>
 # dwb: ep
 
-urls="${XDG_DATA_HOME:-$HOME/.local/share}/periodical/urls"
+local="${XDG_DATA_HOME:-$HOME/.local/share}/periodical"
+urls="$local/urls"
 
+mkdir -p "$local"
 echo "$DWB_URI" >> "$urls"
+sort --unique --output="$urls" "$urls"
