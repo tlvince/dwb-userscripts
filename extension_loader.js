@@ -49,3 +49,12 @@ extensions.load("requestpolicy", {
 //>requestpolicy___CONFIG
 });
 //>requestpolicy___SCRIPT
+//<userscripts___SCRIPT
+extensions.load("userscripts", {
+//<userscripts___CONFIG
+  // paths to userscripts, this extension will also load all scripts in from 
+  // $XDG_CONFIG_HOME/.config/dwb/scripts
+  scripts : []
+//>userscripts___CONFIG
+});
+//>userscripts___SCRIPT
